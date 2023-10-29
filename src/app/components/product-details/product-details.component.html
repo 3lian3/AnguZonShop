@@ -1,0 +1,17 @@
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" routerLink="description" routerLinkActive="active">Description</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" aria-current="page" routerLink="composition" routerLinkActive="active" >Composition</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="manufacturing" routerLinkActive="active">Fabrication du produit</a>
+  </li>
+</ul>
+<div class="description my-5 ">
+<p class="text-justify">
+  <router-outlet (activate)="handleChangeDetails($event)"></router-outlet>
+</p>
+</div>
+

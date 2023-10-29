@@ -1,0 +1,28 @@
+img {
+  width: 415px;
+  height: 400px;
+}
+
+.card-body:hover{
+  background-color: rgb(237, 235, 235);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+p {
+  word-wrap: break-word;
+}
+
+a.position-absolute {
+  margin: 20px;
+}

@@ -1,0 +1,65 @@
+<app-loader  *ngIf="isLoading"></app-loader>
+<div *ngIf="!isLoading" class="container">
+  <div class="row">
+    <div class="col flex-column text-end">
+      <img *ngFor="let url of product?.imageUrl" [src]="url" class="current mt-3" [alt]="product?.name" width="100px" height="100px" (click)="handleChangeImage(url)" [ngClass]="{current: currentImage == url }">
+    </div>
+    <div class="col-10">
+      <div class="row">
+        <div class="col-6 d-flex">
+          <img [src]="currentImage" class="my-3 " alt="{{product?.name}}" width="400px" height="400px">
+        </div>
+        <div class="col-6 my-3">
+        <div class="my-3 test-start">
+        <app-breadcrumb [breadcrumbs]="[{ label: 'Home', url: '/home' }, { label: 'Liste d\'articles', url: '/list-product' }, { label: '/Détail article', url: 'list-product/product/:slug' }]"></app-breadcrumb>
+        </div>
+          <h4 >{{ product?.name }}</h4>
+          <div>
+            <h5>Categorie :
+								{{product ? product.category[0] : null}}
+								/
+								{{product ? product.category[1] : null}}
+						</h5>
+          </div>
+          <div class="my-3 ">
+            <h4>{{ (product?.price || 0 ) | currency :'EUR':'symbol':'1.2-2' }}</h4>
+          </div>
+			<div class="row" *ngIf="product && product.size">
+				<div class="col-4 my-2">
+					<label for="inputState" class="form-label">Taille :</label>
+				</div>
+				<div class="col-6 my-2">
+					<select id="inputState" class="form-select">
+						<option selected>Choisir la taille</option>
+						<option *ngFor="let size of product.size">{{size}}</option>
+					</select>
+				</div>
+			<div class="row">
+				<div class="col-4 my-3">
+					<select class="form-select" aria-label="Default select example">
+						<option selected>Qtes</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="3">4</option>
+						<option value="3">5</option>
+					</select>
+				</div>
+				<div class="col-8 my-3">
+					<button class="btn btn-primary justify-content-center">ajouter au panier<i class="fi fi-rr-shopping-bag m-3"></i>
+					</button>
+				</div>
+				<div class="about my-2">
+					<p>Description :
+						{{ product.description }}</p>
+				</div>
+			</div>
+      		</div>
+		</div>
+	</div>
+</div>
+<app-product-details *ngIf="!isLoading" [product]="product"></app-product-details>
+
+
+
+

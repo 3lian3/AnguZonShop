@@ -1,0 +1,42 @@
+<div class="container">
+	<h1 class="display-5 text-center my-3">Inscription</h1>
+	<div class="row">
+		<div class="col-12 col-md-10 col-lg-8 col-xl-6 mx-auto">
+			<div class="bg-white shadow rounded p-5">
+				<h2 class="fs-3 text-center fw-light mb-2">Inscrivez-vous ici!</h2>
+        <p class="text-center my-3">Vous êtes déjà inscrit : <a routerLink="/signin">connectez-vous</a></p>
+				<form action="">
+					<div class="form-group mb-3">
+						<label for="signupEmail">Nom</label>
+						<input type="text" name="lastname" class="form-control" placeholder="Votre Nom" id="signuplastname" [(ngModel)]="user.lastname">
+					</div>
+					<div class="form-group mb-3">
+						<label for="signupEmail">Prenom</label>
+						<input type="text" name="firstname" class="form-control" placeholder="Ton blaze" id="signupfirstname" [(ngModel)]="user.firstname">
+					</div>
+					<div class="form-group mb-3">
+						<label for="signupEmail">Adresse email</label>
+						<input type="email"  name="firstname" class="form-control" placeholder="example@example.com" id="signupEmail" [(ngModel)]="user.email">
+					</div>
+					<div class="form-group mb-3">
+						<label for="signupPassword">Mot de passe</label>
+						<input type="password"  name="password" class="form-control" placeholder="Au moins 8 caractères" id="signupPassword" [(ngModel)]="user.password">
+					</div>
+					<div class="form-group mb-3">
+						<label for="signupPasswordConfirm">Confirmez le mot de passe</label>
+						<input type="password" name="passwordConfirm" class="form-control" placeholder="Au moins 8 caractères" id="signupPasswordConfirm" [(ngModel)]="user.passwordConfirm">
+					</div>
+					<!--<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="signupCguCheck" formControlName="cguCheck">
+						<label for="signupCguCheck" class="form-check-label">En cochant cette case, vous acceptez des conditions générales d'utilisation</label>
+					</div>-->
+					<div class="d-flex my-4">
+						<button class="btn btn-primary mx-auto" type="submit" (click)="handelSubmit()">Inscription</button>
+					</div>
+          {{user | json}}
+	      </form>
+			</div>
+		</div>
+	</div>
+</div>
+

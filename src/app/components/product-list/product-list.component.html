@@ -1,0 +1,17 @@
+<div class="product-list">
+  <app-loader *ngIf="isLoading"></app-loader>
+
+	<app-product-item *ngFor="let product of products" [product]="product" (displayModalProduct)="handleDisplayModalProduct($event)"></app-product-item>
+
+	<div class="notFound" *ngIf="!isLoading && !products.length">
+		<div class="404 text-center">
+			<h1>404</h1>
+		</div>
+		<div class="text-center">
+			Désolé aucun articles ne correspond à votre recherche!!
+		</div>
+	</div>
+	<app-modal-product *ngIf="displayModal" [product]="modalProduct" (close)="handleCloseModal()"></app-modal-product>
+</div>
+
+

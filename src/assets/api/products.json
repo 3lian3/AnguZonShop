@@ -1,0 +1,253 @@
+[{
+  "id":"1",
+  "name": "T-SHIRT GRAPHIQUE UT JUJUTSU KAISEN SEASON 2",
+  "imageUrl": [
+    "/assets/images/t-shirt-jjsu2.webp",
+    "/assets/images/t-shirt-jj3.webp",
+    "/assets/images/t-shirt-jj4.webp"
+  ],
+  "category": ["t-shirt", "homme"],
+  "size": ["S", "M", "L", "XL"],
+  "price": 19.90,
+  "slug": "t-shirt-graphique-ut-jujutsu-kaisen-season-21",
+  "description": "C'est l'histoire du p’tit dej, tu la connais ? Pas de bol."
+},
+{
+  "id": "2",
+  "name": "T-SHIRT GRAPHIQUE UT JUJUTSU KAISEN SEASON 2",
+  "imageUrl": [
+    "/assets/images/t-shirt-jj3.webp",
+    "/assets/images/t-shirt-jjsu2.webp",
+    "/assets/images/t-shirt-jj4.webp"
+  ],
+  "category": ["t-shirt", "homme"],
+  "size": ["S", "M", "L", "XL"],
+  "price": 19.90,
+  "slug": "t-shirt-graphique-ut-jujutsu-kaisen-season-22",
+  "description": "C'est l'histoire d'une blague vaseuse Mets tes bottes."
+},
+{
+  "id": "3",
+  "name": "T-SHIRT GRAPHIQUE UT JUJUTSU KAISEN SEASON 2",
+  "imageUrl": [
+    "/assets/images/t-shirt-jj4.webp",
+    "/assets/images/t-shirt-jjsu2.webp",
+    "/assets/images/t-shirt-jj3.webp"
+  ],
+  "category": ["t-shirt", "homme"],
+  "size": ["S", "M", "L", "XL"],
+  "price": 19.90,
+  "slug": "t-shirt-graphique-ut-jujutsu-kaisen-season-23",
+  "description": "Que demande un footballeur à son coiffeur ? La coupe du monde s’il vous plait."
+},
+{
+  "id": "4",
+  "name": "T-SHIRT GRAPHIQUE UT L'ATTAQUE DES TITANS",
+  "imageUrl": [
+    "/assets/images/t-shirt-attackT.webp",
+    "/assets/images/t-shirt-attackT2.webp",
+    "/assets/images/t-shirt-my-Hero-Ac.webp"
+  ],
+  "category": ["t-shirt", "homme"],
+  "size": ["S", "M", "L", "XL"],
+  "price": 19.90,
+  "slug": "t-shirt-graphique-ut-lattaque-des-titans",
+  "description": "C'est l'histoire d'un pingouin qui respire par les fesses Un jour, il s’assoit et il meurt."
+},
+{
+  "id": "5",
+  "name": "T-SHIRT GRAPHIQUE UT L'ATTAQUE DES TITANS",
+  "imageUrl": [
+    "/assets/images/t-shirt-attackT2.webp",
+    "/assets/images/t-shirt-attackT.webp",
+    "/assets/images/t-shirt-my-hero2.webp"
+  ],
+  "category": ["t-shirt", "homme"],
+  "size": ["S", "M", "L", "XL"],
+  "price": 19.90,
+  "slug": "t-shirt-graphique-ut-lattaque-des-titans2",
+  "description": "Pourquoi les Belges viennent-ils à la messe avec du savon ? Pour l’Ave Maria."
+},
+{
+  "id": "6",
+  "name": "T-SHIRT GRAPHIQUE UT MY HERO ACADEMIA",
+  "imageUrl": [
+    "/assets/images/t-shirt-my-Hero-Ac.webp",
+    "/assets/images/t-shirt-sake.webp",
+    "/assets/images/t-shirt-my-hero2.webp"
+  ],
+  "category": ["t-shirt", "homme"],
+  "size": ["S", "M", "L", "XL"],
+  "price": 19.90,
+  "slug": "t-shirt-graphique-ut-my-hero-academia",
+  "description": "Comment s'appelle le cul de la Schtroumpfette ? Le Blu-ray."
+},
+{
+  "id": "7",
+  "name": "T-SHIRT GRAPHIQUE UT MY HERO ACADEMIA",
+  "imageUrl": [
+    "/assets/images/t-shirt-my-hero2.webp",
+    "/assets/images/t-shirt-sake.webp",
+    "/assets/images/t-shirt-my-Hero-Ac.webp"
+  ],
+  "category": ["t-shirt", "homme"],
+  "size": ["S", "M", "L", "XL"],
+  "price": 19.90,
+  "slug": "t-shirt-graphique-ut-my-hero-academia2",
+  "description": "C'est quoi une chauve-souris avec une perruque ? Une souris."
+},
+{
+  "id": "8",
+  "name": "T-SHIRT GRAPHIQUE UT THE SAKE COLLECTION",
+  "imageUrl":[
+     "/assets/images/t-shirt-sake.webp",
+     "/assets/images/t-shirt-my-hero2.webp",
+     "/assets/images/t-shirt-my-Hero-Ac.webp"
+    ],
+  "category": ["t-shirt", "homme"],
+  "size": ["S", "M", "L", "XL"],
+  "price": 19.90,
+  "slug": "t-shirt-graphique-ut-the-sake-collection",
+  "description": "Que dit un escargot quand il croise une limace ? Oh un naturiste."
+},
+{
+  "id": "9",
+  "name": "SWEAT DRAGON BALL Z KANJI KAME",
+  "imageUrl": [
+    "/assets/images/sweat-black-goku-rose.webp",
+    "/assets/images/sweat-black-goku-rose.webp",
+    "/assets/images/sweat-black-goku-rose.webp"
+  ],
+  "category": ["sweat", "homme"],
+  "size": ["S", "M", "L", "XL"],
+  "price": 59.90,
+  "slug": "sweat-dragon-ball-z-kanji-kame",
+  "description": "Pourquoi les canards sont toujours à l'heure ? Parce qu’ils sont dans l’étang."
+},
+{
+  "id": "10",
+  "name": "SWEAT DRAGON BALL ECOLE DE LA TORTUE",
+  "imageUrl":[
+    "/assets/images/sweat-capuche-sangoku-logo.webp",
+    "/assets/images/sweat-capuche-sangoku-logo.webp",
+    "/assets/images/sweat-capuche-sangoku-logo.webp"
+  ],
+  "category": ["sweat", "homme"],
+  "size": ["S", "M", "L", "XL"],
+  "price": 59.90,
+  "slug": "sweat-dragon-ball-ecole-de-la-tortue",
+  "description": "Qu'est-ce qui est dur, blanc, avec le bout rouge, et qui sent la pisse ? Une borne kilométrique."
+},
+{
+  "id": "11",
+  "name": "SWEAT DRAGON BALL Z VEGETA ADIDAS",
+  "imageUrl":[
+    "/assets/images/sweat-dbz.webp",
+    "/assets/images/sweat-dbz.webp",
+    "/assets/images/sweat-dbz.webp"
+  ],
+  "category":["sweat", "homme"],
+  "size": ["S", "M", "L", "XL"],
+  "price": 59.90,
+  "slug": "sweat-dragon-ball-z-vegeta-adidas",
+  "description": "Que fait un crocodile quand il rencontre une superbe femelle ? Il Lacoste."
+},
+{
+  "id": "12",
+  "name": "SWEAT DRAGON BALL Z NIKE JUST DO IT",
+  "imageUrl": [
+    "/assets/images/sweat-dbz2.webp",
+    "/assets/images/sweat-dbz2.webp",
+    "/assets/images/sweat-dbz2.webp"
+  ],
+  "category": ["sweat", "homme"],
+  "size": ["S", "M", "L", "XL"],
+  "price": 69.90,
+  "slug": "sweat-dragon-ball-z-nike-just-do-it",
+  "description": "C'est quoi un petit pois avec une épée face à une carotte avec une épée ? Un bon duel."
+},
+{
+  "id": "13",
+  "name": "SWEAT DRAGON BALL Z GIKU BATON MAGIQUE",
+  "imageUrl": [
+    "/assets/images/sweat-dragon-ball-z-orange.webp",
+    "/assets/images/sweat-dragon-ball-z-orange.webp",
+    "/assets/images/sweat-dragon-ball-z-orange.webp"
+  ],
+  "category": ["sweat", "homme"],
+  "size": ["S", "M", "L", "XL"],
+  "price": 69.90,
+  "slug": "sweat-dragon-ball-z-goku-baton-magique",
+  "description": "Quel est le point commun entre les maths et le sexe ? Plus il y a d’inconnues, plus c’est chaud."
+},
+{
+  "id": "14",
+  "name": "SWEAT DRAGON BALL Z TORTUE GENIALE",
+  "imageUrl": [
+    "/assets/images/sweat-dsz3.webp",
+    "/assets/images/sweat-goku-chichi.webp",
+    "/assets/images/Sweat_jaune_dbz.webp"
+  ],
+  "category": ["sweat", "homme"],
+  "size": ["S", "M", "L", "XL"],
+  "price": 69.90,
+  "slug": "sweat-dragon-ball-z-tortue-geniale",
+  "description": "Pourquoi les pêcheurs ne sont pas gros ? Parce qu’ils surveillent leur ligne."
+},
+{
+  "id": "15",
+  "name": "SWEAT DRAGON BALL GOKU & CHICHI",
+  "imageUrl": [
+    "/assets/images/sweat-goku-chichi.webp",
+    "/assets/images/Sweat_jaune_dbz.webp",
+    "/assets/images/sweat-dsz3.webp"
+  ],
+  "category": ["sweat", "homme"],
+  "size": ["S", "M", "L", "XL"],
+  "price": 59.90,
+  "slug": "sweat-dragon-ball-goku-chichi",
+  "description": "Tu connais la blague de la chaise. Elle est tellement longue."
+},
+{
+"id": "16",
+"name": "SWEAT DRAGON BALL Z GOKU BLACK APPARITION",
+"imageUrl":[
+  "/assets/images/Sweat_jaune_dbz.webp",
+  "/assets/images/sweat-goku-chichi.webp",
+  "/assets/images/sweat-dsz3.webp"
+],
+"category": ["sweat", "homme"],
+"size": ["S", "M", "L", "XL"],
+"price": 69.90,
+"slug": "sweat-dragon-ball-z-goku-black-apparition",
+"description": "C'est l'histoire d'un papier qui tombe à l'eau. Il crie \"Au secours ! J’ai pas pied !\""
+},
+{
+"id": "17",
+"name": "CASQUETTE NEW YORK YANKEES",
+"imageUrl":[
+  "/assets/images/casquette-NY.webp",
+  "/assets/images/casquette-NY2.webp",
+  "/assets/images/casquette-NY3.webp"
+],
+"category": ["accessoire", "homme"],
+"size": ["S", "M", "L", "XL"],
+"price": 69.90,
+"slug": "casquette-new-york-yankees",
+"description": "C'est l'histoire d'un papier qui tombe à l'eau. Il crie \"Au secours ! J’ai pas pied !\""
+},
+{
+"id": "18",
+"name": "GANTS NIKE PERFORMANCE",
+"imageUrl":[
+  "/assets/images/gants-Nike.webp",
+  "/assets/images/gants-nike2.webp",
+  "/assets/images/gants-nike3.webp"
+],
+"category":["accessoire", "homme"],
+"size": ["S", "M", "L", "XL"],
+"price": 69.90,
+"slug": "gants-nike-performance",
+"description": "C'est l'histoire d'un papier qui tombe à l'eau. Il crie \"Au secours ! J’ai pas pied !\""
+}
+]
