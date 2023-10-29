@@ -1,0 +1,34 @@
+ [
+      {
+          "id": "1",
+          "name": "t-shirts",
+          "slug": "t-shirts"
+
+      },
+      {
+          "id": "2",
+          "name": "homme",
+          "slug": "homme"
+
+      },
+      {
+          "id": "3",
+          "name": "sweats",
+          "slug": "sweats"
+
+      },
+      {
+          "id": "4",
+          "name": "femme",
+          "slug": "femme"
+
+      },
+      {
+          "id": "5",
+          "name": "accessoires",
+          "slug": "accessoires"
+
+      }
+
+  ]
+

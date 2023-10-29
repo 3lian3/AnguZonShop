@@ -22,6 +22,8 @@ import { ProductDetailsComponent } from './components/product-details/product-de
 import { ProductManufacturingComponent } from './components/product-tabs/product-manufacturing/product-manufacturing.component';
 import { ProductCompositionComponent } from './components/product-tabs/product-composition/product-composition.component';
 import { ProductDescriptionComponent } from './components/product-tabs/product-descriptions/product-descriptions.component';
+import { ProductsCategoryComponent } from './components/products-category/products-category.component';
+import { PageTitleComponent } from './components/page-title/page-title.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,8 @@ import { ProductDescriptionComponent } from './components/product-tabs/product-d
     ProductManufacturingComponent,
     ProductCompositionComponent,
     ProductDescriptionComponent,
+    ProductsCategoryComponent,
+    PageTitleComponent,
   ],
   imports: [
     BrowserModule,

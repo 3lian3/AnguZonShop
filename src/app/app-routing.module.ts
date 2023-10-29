@@ -8,6 +8,7 @@ import { ProductComponent } from './components/product/product.component';
 import { ProductDescriptionComponent } from './components/product-tabs/product-descriptions/product-descriptions.component';
 import { ProductManufacturingComponent } from './components/product-tabs/product-manufacturing/product-manufacturing.component';
 import { ProductCompositionComponent } from './components/product-tabs/product-composition/product-composition.component';
+import { ProductsCategoryComponent } from './components/products-category/products-category.component';
 
 export const routes: Routes = [
   { path: '', component: MainComponent, pathMatch: 'full' },
@@ -35,6 +36,9 @@ export const routes: Routes = [
       },
     ],
   },
+  { path: 'category', component: ProductsCategoryComponent, pathMatch: 'full' },
+  { path: 'sweat', component: ProductsCategoryComponent, pathMatch: 'full' },
+  { path: 'accessoires', component: ProductsCategoryComponent, pathMatch: 'full' },
   { path: 'signin', component: SigninComponent, pathMatch: 'full' },
   { path: 'signup', component: SignupComponent, pathMatch: 'full' },
   { path: '**', redirectTo: '' },

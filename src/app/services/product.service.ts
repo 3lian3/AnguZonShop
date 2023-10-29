@@ -4,13 +4,15 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { environment } from './../../environments/environment';
 
+
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
 
   private product: Product[] = [];
-  private api: string = environment.serverUrl;
+  private api: string = environment.serverUrl.products;
+  // private api: string = "assets/api/products.json";
 
   constructor(private http: HttpClient) { }
 

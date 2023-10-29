@@ -6,7 +6,19 @@
     "/assets/images/t-shirt-jj3.webp",
     "/assets/images/t-shirt-jj4.webp"
   ],
-  "category": ["t-shirt", "homme"],
+  "category": [
+    {
+      "id": "1",
+      "name": "t-shirt",
+      "slug": "t-shirt"
+    },
+    {
+      "id": "2",
+      "name": "homme",
+      "slug": "homme"
+    }
+  ],
+  "color": ["black", "white", "blue", "gray"],
   "size": ["S", "M", "L", "XL"],
   "price": 19.90,
   "slug": "t-shirt-graphique-ut-jujutsu-kaisen-season-21",
@@ -20,7 +32,19 @@
     "/assets/images/t-shirt-jjsu2.webp",
     "/assets/images/t-shirt-jj4.webp"
   ],
-  "category": ["t-shirt", "homme"],
+  "category": [
+    {
+      "id": "1",
+      "name": "t-shirt",
+      "slug": "t-shirt"
+    },
+    {
+      "id": "2",
+      "name": "homme",
+      "slug": "homme"
+    }
+  ],
+  "color": ["black", "white", "blue", "gray"],
   "size": ["S", "M", "L", "XL"],
   "price": 19.90,
   "slug": "t-shirt-graphique-ut-jujutsu-kaisen-season-22",
@@ -34,7 +58,19 @@
     "/assets/images/t-shirt-jjsu2.webp",
     "/assets/images/t-shirt-jj3.webp"
   ],
-  "category": ["t-shirt", "homme"],
+  "category": [
+    {
+      "id": "1",
+      "name": "t-shirt",
+      "slug": "t-shirt"
+    },
+    {
+      "id": "2",
+      "name": "homme",
+      "slug": "homme"
+    }
+  ],
+  "color": ["black", "white", "blue", "gray"],
   "size": ["S", "M", "L", "XL"],
   "price": 19.90,
   "slug": "t-shirt-graphique-ut-jujutsu-kaisen-season-23",
@@ -48,7 +84,19 @@
     "/assets/images/t-shirt-attackT2.webp",
     "/assets/images/t-shirt-my-Hero-Ac.webp"
   ],
-  "category": ["t-shirt", "homme"],
+  "category": [
+    {
+      "id": "1",
+      "name": "t-shirt",
+      "slug": "t-shirt"
+    },
+    {
+      "id": "2",
+      "name": "homme",
+      "slug": "homme"
+    }
+  ],
+  "color": ["black", "white", "blue", "gray"],
   "size": ["S", "M", "L", "XL"],
   "price": 19.90,
   "slug": "t-shirt-graphique-ut-lattaque-des-titans",
@@ -62,7 +110,19 @@
     "/assets/images/t-shirt-attackT.webp",
     "/assets/images/t-shirt-my-hero2.webp"
   ],
-  "category": ["t-shirt", "homme"],
+  "category": [
+    {
+      "id": "1",
+      "name": "t-shirt",
+      "slug": "t-shirt"
+    },
+    {
+      "id": "4",
+      "name": "femme",
+      "slug": "femme"
+    }
+  ],
+  "color": ["black", "white", "blue", "gray"],
   "size": ["S", "M", "L", "XL"],
   "price": 19.90,
   "slug": "t-shirt-graphique-ut-lattaque-des-titans2",
@@ -76,7 +136,19 @@
     "/assets/images/t-shirt-sake.webp",
     "/assets/images/t-shirt-my-hero2.webp"
   ],
-  "category": ["t-shirt", "homme"],
+  "category": [
+    {
+      "id": "1",
+      "name": "t-shirt",
+      "slug": "t-shirt"
+    },
+    {
+      "id": "4",
+      "name": "femme",
+      "slug": "femme"
+    }
+  ],
+  "color": ["black", "white", "blue", "gray"],
   "size": ["S", "M", "L", "XL"],
   "price": 19.90,
   "slug": "t-shirt-graphique-ut-my-hero-academia",
@@ -90,7 +162,19 @@
     "/assets/images/t-shirt-sake.webp",
     "/assets/images/t-shirt-my-Hero-Ac.webp"
   ],
-  "category": ["t-shirt", "homme"],
+  "category": [
+    {
+      "id": "1",
+      "name": "t-shirt",
+      "slug": "t-shirt"
+    },
+    {
+      "id": "4",
+      "name": "femme",
+      "slug": "femme"
+    }
+  ],
+  "color": ["black", "white", "blue", "gray"],
   "size": ["S", "M", "L", "XL"],
   "price": 19.90,
   "slug": "t-shirt-graphique-ut-my-hero-academia2",
@@ -104,7 +188,19 @@
      "/assets/images/t-shirt-my-hero2.webp",
      "/assets/images/t-shirt-my-Hero-Ac.webp"
     ],
-  "category": ["t-shirt", "homme"],
+    "category": [
+      {
+        "id": "1",
+        "name": "t-shirt",
+        "slug": "t-shirt"
+      },
+      {
+        "id": "4",
+        "name": "femme",
+        "slug": "femme"
+      }
+    ],
+    "color": ["black", "white", "blue", "gray"],
   "size": ["S", "M", "L", "XL"],
   "price": 19.90,
   "slug": "t-shirt-graphique-ut-the-sake-collection",
@@ -118,7 +214,19 @@
     "/assets/images/sweat-black-goku-rose.webp",
     "/assets/images/sweat-black-goku-rose.webp"
   ],
-  "category": ["sweat", "homme"],
+  "category": [
+    {
+      "id": "3",
+      "name": "sweat",
+      "slug": "sweat"
+    },
+    {
+      "id": "2",
+      "name": "homme",
+      "slug": "homme"
+    }
+  ],
+  "color": ["black", "white", "blue", "gray"],
   "size": ["S", "M", "L", "XL"],
   "price": 59.90,
   "slug": "sweat-dragon-ball-z-kanji-kame",
@@ -132,7 +240,19 @@
     "/assets/images/sweat-capuche-sangoku-logo.webp",
     "/assets/images/sweat-capuche-sangoku-logo.webp"
   ],
-  "category": ["sweat", "homme"],
+  "category": [
+    {
+      "id": "3",
+      "name": "sweat",
+      "slug": "sweat"
+    },
+    {
+      "id": "2",
+      "name": "homme",
+      "slug": "homme"
+    }
+  ],
+  "color": ["black", "white", "blue", "gray"],
   "size": ["S", "M", "L", "XL"],
   "price": 59.90,
   "slug": "sweat-dragon-ball-ecole-de-la-tortue",
@@ -146,7 +266,19 @@
     "/assets/images/sweat-dbz.webp",
     "/assets/images/sweat-dbz.webp"
   ],
-  "category":["sweat", "homme"],
+  "category": [
+    {
+      "id": "3",
+      "name": "sweat",
+      "slug": "sweat"
+    },
+    {
+      "id": "2",
+      "name": "homme",
+      "slug": "homme"
+    }
+  ],
+  "color": ["black", "white", "blue", "gray"],
   "size": ["S", "M", "L", "XL"],
   "price": 59.90,
   "slug": "sweat-dragon-ball-z-vegeta-adidas",
@@ -160,7 +292,19 @@
     "/assets/images/sweat-dbz2.webp",
     "/assets/images/sweat-dbz2.webp"
   ],
-  "category": ["sweat", "homme"],
+  "category": [
+    {
+      "id": "3",
+      "name": "sweat",
+      "slug": "sweat"
+    },
+    {
+      "id": "2",
+      "name": "homme",
+      "slug": "homme"
+    }
+  ],
+  "color": ["black", "white", "blue", "gray"],
   "size": ["S", "M", "L", "XL"],
   "price": 69.90,
   "slug": "sweat-dragon-ball-z-nike-just-do-it",
@@ -174,7 +318,19 @@
     "/assets/images/sweat-dragon-ball-z-orange.webp",
     "/assets/images/sweat-dragon-ball-z-orange.webp"
   ],
-  "category": ["sweat", "homme"],
+  "category": [
+    {
+      "id": "3",
+      "name": "sweat",
+      "slug": "sweat"
+    },
+    {
+      "id": "4",
+      "name": "femme",
+      "slug": "femme"
+    }
+  ],
+  "color": ["black", "white", "blue", "gray"],
   "size": ["S", "M", "L", "XL"],
   "price": 69.90,
   "slug": "sweat-dragon-ball-z-goku-baton-magique",
@@ -188,7 +344,19 @@
     "/assets/images/sweat-goku-chichi.webp",
     "/assets/images/Sweat_jaune_dbz.webp"
   ],
-  "category": ["sweat", "homme"],
+  "category": [
+    {
+      "id": "3",
+      "name": "sweat",
+      "slug": "sweat"
+    },
+    {
+      "id": "4",
+      "name": "femme",
+      "slug": "femme"
+    }
+  ],
+  "color": ["black", "white", "blue", "gray"],
   "size": ["S", "M", "L", "XL"],
   "price": 69.90,
   "slug": "sweat-dragon-ball-z-tortue-geniale",
@@ -202,7 +370,19 @@
     "/assets/images/Sweat_jaune_dbz.webp",
     "/assets/images/sweat-dsz3.webp"
   ],
-  "category": ["sweat", "homme"],
+  "category": [
+    {
+      "id": "3",
+      "name": "sweat",
+      "slug": "sweat"
+    },
+    {
+      "id": "4",
+      "name": "femme",
+      "slug": "femme"
+    }
+  ],
+  "color": ["black", "white", "blue", "gray"],
   "size": ["S", "M", "L", "XL"],
   "price": 59.90,
   "slug": "sweat-dragon-ball-goku-chichi",
@@ -216,7 +396,19 @@
   "/assets/images/sweat-goku-chichi.webp",
   "/assets/images/sweat-dsz3.webp"
 ],
-"category": ["sweat", "homme"],
+"category": [
+  {
+    "id": "3",
+    "name": "sweat",
+    "slug": "sweat"
+  },
+  {
+    "id": "4",
+    "name": "femme",
+    "slug": "femme"
+  }
+],
+"color": ["black", "white", "blue", "gray"],
 "size": ["S", "M", "L", "XL"],
 "price": 69.90,
 "slug": "sweat-dragon-ball-z-goku-black-apparition",
@@ -230,7 +422,19 @@
   "/assets/images/casquette-NY2.webp",
   "/assets/images/casquette-NY3.webp"
 ],
-"category": ["accessoire", "homme"],
+"category": [
+  {
+    "id": "5",
+    "name": "accessoires",
+    "slug": "accessoires"
+  },
+  {
+    "id": "2",
+    "name": "homme",
+    "slug": "homme"
+  }
+],
+"color": ["black", "white", "blue", "gray"],
 "size": ["S", "M", "L", "XL"],
 "price": 69.90,
 "slug": "casquette-new-york-yankees",
@@ -244,7 +448,19 @@
   "/assets/images/gants-nike2.webp",
   "/assets/images/gants-nike3.webp"
 ],
-"category":["accessoire", "homme"],
+"category": [
+  {
+    "id": "5",
+    "name": "accessoires",
+    "slug": "accessoires"
+  },
+  {
+    "id": "4",
+    "name": "femme",
+    "slug": "femme"
+  }
+],
+"color": ["black", "white", "blue", "gray"],
 "size": ["S", "M", "L", "XL"],
 "price": 69.90,
 "slug": "gants-nike-performance",
