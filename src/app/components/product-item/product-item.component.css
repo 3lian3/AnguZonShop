@@ -1,5 +1,13 @@
-img {
+:host {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
   width: 415px;
+}
+
+img {
   height: 400px;
 }
 

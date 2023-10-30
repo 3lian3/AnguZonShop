@@ -3,7 +3,7 @@
 </div>
 
 <div class="row">
-	<div class="col-2 flex-column p-3" style="width: 280px;">
+	<div class="col-2" style="width: 280px">
 		<h4 class="fs-4 mx-4">
 			<strong>Catégories</strong>
 		</h4>
@@ -15,8 +15,14 @@
 		</ul>
 	</div>
 
-	<div class="products-list">
-		<app-product-item *ngFor="let product of filteredProducts" class="product-item" [product]="product"></app-product-item>
+	<div class="col">
+    <div class="row">
+        <div class="col" *ngFor="let product of filteredProducts">
+            		<app-product-item class="product-item" [product]="product"></app-product-item>
+        </div>
+
+    </div>
+
 	</div>
 
 </div>
