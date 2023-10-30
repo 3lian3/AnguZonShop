@@ -1,0 +1,12 @@
+.carousel-item {
+  margin-top: 80px;
+  height:95vh;  /* Hauteur ajustable selon vos besoins */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.aboutCarousel {
+  color: black;
+
+}

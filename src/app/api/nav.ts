@@ -2,29 +2,23 @@ import { Item } from "../models/item"
 
 export const nav_items: Item[] = [
   {
-    name: "Home"
+    name: "Home",
+    path: "home" // Ajouté
   },
   {
-    name: "Tous nos Produits"
+    name: "products",
+    path: "products" // Ajouté
   },
-  {
-    name: "T-shirts",
-  },
-  {
-    name: "Sweat"
-  },
-  {
-    name: "Accessoiries"
-  },
- ]
+]
 
 export const auth_items = [
   {
-    name: "Connexion"
+    name: "Connexion",
+    path: "signin"
   },
   {
-    name: "Inscription"
+    name: "Inscription",
+    path: "signup"
   },
-
 ]
 

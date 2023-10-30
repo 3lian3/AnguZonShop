@@ -3,6 +3,7 @@ import { Component, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Product } from 'src/app/models/product';
 import { ProductService } from 'src/app/services/product.service';
+import { ResultRequest } from 'src/app/models/result-request';
 
 @Component({
   selector: 'app-product',
@@ -14,6 +15,7 @@ export class ProductComponent implements OnDestroy{
   slug: string | undefined;
   currentImage: string | undefined;
   product: Product | undefined;
+  resultData: ResultRequest<Product> | undefined;
   productSub: Subscription | undefined;
   isLoading: boolean = true;
 
@@ -28,9 +30,11 @@ export class ProductComponent implements OnDestroy{
     this.slug = this.route.snapshot.params['slug']
     this.productSub = this.productService.getProducts()
       .subscribe({
-        next: (products: Product[]) => {
-          this.product = products.filter(p => p.slug === this.slug)[0]
-          this.currentImage = this.product?.imageUrl[0];
+        next: (resultData: ResultRequest<Product>) => {
+          if (resultData.isSuccess) {
+            this.product = resultData.results.filter(p => p.slug === this.slug)[0]
+            this.currentImage = this.product?.imageUrl[0];
+          }
           this.isLoading = false;
       },
         error: (error: any) => {

@@ -1,4 +1,8 @@
- [
+ {
+  "isSuccess": true,
+  "statusCode": 200,
+  "length": 3,
+  "results": [
       {
           "id": "1",
           "name": "t-shirts",
@@ -7,28 +11,15 @@
       },
       {
           "id": "2",
-          "name": "homme",
-          "slug": "homme"
-
-      },
-      {
-          "id": "3",
           "name": "sweats",
           "slug": "sweats"
 
       },
       {
-          "id": "4",
-          "name": "femme",
-          "slug": "femme"
-
-      },
-      {
-          "id": "5",
+          "id": "3",
           "name": "accessoires",
           "slug": "accessoires"
 
       }
-
   ]
-
+ }

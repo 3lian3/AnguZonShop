@@ -9,9 +9,10 @@ import { ProductDescriptionComponent } from './components/product-tabs/product-d
 import { ProductManufacturingComponent } from './components/product-tabs/product-manufacturing/product-manufacturing.component';
 import { ProductCompositionComponent } from './components/product-tabs/product-composition/product-composition.component';
 import { ProductsCategoryComponent } from './components/products-category/products-category.component';
+import { HomeComponent } from './components/home/home.component';
 
 export const routes: Routes = [
-  { path: '', component: MainComponent, pathMatch: 'full' },
+  { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'product-list', component: ProductListComponent, pathMatch: 'full' },
   {
     path: 'product/:slug',
@@ -37,8 +38,7 @@ export const routes: Routes = [
     ],
   },
   { path: 'category', component: ProductsCategoryComponent, pathMatch: 'full' },
-  { path: 'sweat', component: ProductsCategoryComponent, pathMatch: 'full' },
-  { path: 'accessoires', component: ProductsCategoryComponent, pathMatch: 'full' },
+  { path: 'category/:slug', component: ProductsCategoryComponent, pathMatch: 'full' },
   { path: 'signin', component: SigninComponent, pathMatch: 'full' },
   { path: 'signup', component: SignupComponent, pathMatch: 'full' },
   { path: '**', redirectTo: '' },

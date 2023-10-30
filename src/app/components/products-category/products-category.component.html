@@ -1,1 +1,23 @@
-<app-page-title title="products"></app-page-title>
+<div class="title-category">
+	<app-page-title title="Produits"></app-page-title>
+</div>
+
+<div class="row">
+	<div class="col-2 flex-column p-3" style="width: 280px;">
+		<h4 class="fs-4 mx-4">
+			<strong>Catégories</strong>
+		</h4>
+		<hr>
+		<ul class="nav">
+			<li class="nav-item" *ngFor="let category of categories?.results">
+				<a href="#" [ngClass]="{'active': category.slug === currentCategory?.slug}" (click)="handleClick($event, category)" class="nav-link mx-4" aria-current="page">{{category.name}}</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="products-list">
+		<app-product-item *ngFor="let product of filteredProducts" class="product-item" [product]="product"></app-product-item>
+	</div>
+
+</div>
+

@@ -1,7 +1,8 @@
 import { ProductService } from './../../services/product.service';
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Product } from 'src/app/models/product';
+import { ResultRequest } from 'src/app/models/result-request';
 
 
 @Component({
@@ -12,19 +13,24 @@ import { Product } from 'src/app/models/product';
 
 export class ProductListComponent implements  OnInit, OnDestroy {
 
-  products: Product[] = []
+  resultData: ResultRequest<Product> | undefined;
+  @Input() products: Product[] = [];
   displayModal: boolean = false;
   modalProduct: Product | undefined;
   productsSub: Subscription | undefined;
-  isLoading: boolean = true;
+  @Input() isLoading: boolean = true;
 
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
     this.productsSub = this.productService.getProducts()
       .subscribe({
-        next: (products: Product[]) => {
-          this.products = products;
+        next: (resultData: ResultRequest<Product>) => {
+          console.log('service produits =>', resultData);
+
+          if (resultData.isSuccess) {
+            this.products = resultData.results
+          }
           this.isLoading = false;
         },
         error: (error: any) => {
@@ -33,8 +39,8 @@ export class ProductListComponent implements  OnInit, OnDestroy {
         },
         complete: () => {
           console.log("Subscription completed");
-         }
-    })
+        }
+      });
 
     }
 

@@ -1,12 +1,12 @@
-.container {
-margin-top: 75px;
-box-shadow: 0 0 10px rgba(0,0,0,0.2);
-height: 100px;
+.page-title {
+margin-top: 100px;
+height: 70px;
 width: 100%;
 display: flex;
 justify-content: center;
 align-content: center;
 }
+
 h1 {
-  font-weight: 800;
+  font-weight: 2rem;
 }

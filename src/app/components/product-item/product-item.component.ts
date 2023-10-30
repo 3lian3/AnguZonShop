@@ -14,6 +14,7 @@ export class ProductItemComponent {
   constructor() { }
 
   ngOnInit(): void {
+    console.log('Produit reçu :', this.product);
   }
 
   handleClickProduct(product: Product | undefined) {

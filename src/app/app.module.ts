@@ -24,6 +24,7 @@ import { ProductCompositionComponent } from './components/product-tabs/product-c
 import { ProductDescriptionComponent } from './components/product-tabs/product-descriptions/product-descriptions.component';
 import { ProductsCategoryComponent } from './components/products-category/products-category.component';
 import { PageTitleComponent } from './components/page-title/page-title.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { PageTitleComponent } from './components/page-title/page-title.component
     ProductDescriptionComponent,
     ProductsCategoryComponent,
     PageTitleComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

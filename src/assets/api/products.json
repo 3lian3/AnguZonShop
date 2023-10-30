@@ -1,4 +1,9 @@
-[{
+{
+  "isSuccess": true,
+  "statusCode": 200,
+  "length": 18,
+  "results":[
+  {
   "id":"1",
   "name": "T-SHIRT GRAPHIQUE UT JUJUTSU KAISEN SEASON 2",
   "imageUrl": [
@@ -6,16 +11,17 @@
     "/assets/images/t-shirt-jj3.webp",
     "/assets/images/t-shirt-jj4.webp"
   ],
-  "category": [
+  "categories": [
     {
       "id": "1",
-      "name": "t-shirt",
-      "slug": "t-shirt"
+      "name": "t-shirts",
+      "slug": "t-shirts"
     },
     {
-      "id": "2",
-      "name": "homme",
-      "slug": "homme"
+      "id": "12",
+      "name": "hommess",
+      "path": "/hommess",
+      "slug": "hommess"
     }
   ],
   "color": ["black", "white", "blue", "gray"],
@@ -32,16 +38,17 @@
     "/assets/images/t-shirt-jjsu2.webp",
     "/assets/images/t-shirt-jj4.webp"
   ],
-  "category": [
+  "categories": [
     {
       "id": "1",
-      "name": "t-shirt",
-      "slug": "t-shirt"
+      "name": "t-shirts",
+      "slug": "t-shirts"
     },
     {
-      "id": "2",
-      "name": "homme",
-      "slug": "homme"
+      "id": "12",
+      "name": "hommess",
+      "path": "/hommess",
+      "slug": "hommess"
     }
   ],
   "color": ["black", "white", "blue", "gray"],
@@ -58,16 +65,17 @@
     "/assets/images/t-shirt-jjsu2.webp",
     "/assets/images/t-shirt-jj3.webp"
   ],
-  "category": [
+  "categories": [
     {
       "id": "1",
-      "name": "t-shirt",
-      "slug": "t-shirt"
+      "name": "t-shirts",
+      "slug": "t-shirts"
     },
     {
-      "id": "2",
-      "name": "homme",
-      "slug": "homme"
+      "id": "12",
+      "name": "hommes",
+      "path": "/hommes",
+      "slug": "hommes"
     }
   ],
   "color": ["black", "white", "blue", "gray"],
@@ -84,16 +92,17 @@
     "/assets/images/t-shirt-attackT2.webp",
     "/assets/images/t-shirt-my-Hero-Ac.webp"
   ],
-  "category": [
+  "categories": [
     {
       "id": "1",
-      "name": "t-shirt",
-      "slug": "t-shirt"
+      "name": "t-shirts",
+      "slug": "t-shirts"
     },
     {
-      "id": "2",
-      "name": "homme",
-      "slug": "homme"
+      "id": "12",
+      "name": "hommes",
+      "path": "/hommes",
+      "slug": "hommes"
     }
   ],
   "color": ["black", "white", "blue", "gray"],
@@ -110,16 +119,17 @@
     "/assets/images/t-shirt-attackT.webp",
     "/assets/images/t-shirt-my-hero2.webp"
   ],
-  "category": [
+  "categories": [
     {
       "id": "1",
-      "name": "t-shirt",
-      "slug": "t-shirt"
+      "name": "t-shirts",
+      "slug": "t-shirts"
     },
     {
-      "id": "4",
-      "name": "femme",
-      "slug": "femme"
+      "id": "14",
+      "name": "femmess",
+      "path": "/femmes",
+      "slug": "femmes"
     }
   ],
   "color": ["black", "white", "blue", "gray"],
@@ -136,16 +146,17 @@
     "/assets/images/t-shirt-sake.webp",
     "/assets/images/t-shirt-my-hero2.webp"
   ],
-  "category": [
+  "categories": [
     {
       "id": "1",
-      "name": "t-shirt",
-      "slug": "t-shirt"
+      "name": "t-shirts",
+      "slug": "t-shirts"
     },
     {
-      "id": "4",
-      "name": "femme",
-      "slug": "femme"
+      "id": "14",
+      "name": "femmes",
+      "path": "/femmes",
+      "slug": "femmes"
     }
   ],
   "color": ["black", "white", "blue", "gray"],
@@ -162,16 +173,17 @@
     "/assets/images/t-shirt-sake.webp",
     "/assets/images/t-shirt-my-Hero-Ac.webp"
   ],
-  "category": [
+  "categories": [
     {
       "id": "1",
-      "name": "t-shirt",
-      "slug": "t-shirt"
+      "name": "t-shirts",
+      "slug": "t-shirts"
     },
     {
-      "id": "4",
-      "name": "femme",
-      "slug": "femme"
+      "id": "14",
+      "name": "femmes",
+      "path": "/femmes",
+      "slug": "femmes"
     }
   ],
   "color": ["black", "white", "blue", "gray"],
@@ -188,16 +200,17 @@
      "/assets/images/t-shirt-my-hero2.webp",
      "/assets/images/t-shirt-my-Hero-Ac.webp"
     ],
-    "category": [
+    "categories": [
       {
         "id": "1",
-        "name": "t-shirt",
-        "slug": "t-shirt"
+        "name": "t-shirts",
+        "slug": "t-shirts"
       },
       {
-        "id": "4",
-        "name": "femme",
-        "slug": "femme"
+        "id": "14",
+        "name": "femmes",
+        "path": "/femmes",
+        "slug": "femmes"
       }
     ],
     "color": ["black", "white", "blue", "gray"],
@@ -211,19 +224,20 @@
   "name": "SWEAT DRAGON BALL Z KANJI KAME",
   "imageUrl": [
     "/assets/images/sweat-black-goku-rose.webp",
-    "/assets/images/sweat-black-goku-rose.webp",
-    "/assets/images/sweat-black-goku-rose.webp"
+    "/assets/images/sweat-dbz.webp",
+    "/assets/images/sweat-capuche-sangoku-logo.webp"
   ],
-  "category": [
+  "categories": [
     {
       "id": "3",
-      "name": "sweat",
-      "slug": "sweat"
+      "name": "sweats",
+      "slug": "sweats"
     },
     {
-      "id": "2",
-      "name": "homme",
-      "slug": "homme"
+      "id": "12",
+      "name": "hommes",
+      "path": "/hommes",
+      "slug": "hommes"
     }
   ],
   "color": ["black", "white", "blue", "gray"],
@@ -237,19 +251,20 @@
   "name": "SWEAT DRAGON BALL ECOLE DE LA TORTUE",
   "imageUrl":[
     "/assets/images/sweat-capuche-sangoku-logo.webp",
-    "/assets/images/sweat-capuche-sangoku-logo.webp",
-    "/assets/images/sweat-capuche-sangoku-logo.webp"
+    "/assets/images/sweat-dbz.webp",
+    "/assets/images/sweat-black-goku-rose.webp"
   ],
-  "category": [
+  "categories": [
     {
       "id": "3",
-      "name": "sweat",
-      "slug": "sweat"
+      "name": "sweats",
+      "slug": "sweats"
     },
     {
-      "id": "2",
-      "name": "homme",
-      "slug": "homme"
+      "id": "12",
+      "name": "hommes",
+      "path": "/hommes",
+      "slug": "hommes"
     }
   ],
   "color": ["black", "white", "blue", "gray"],
@@ -263,19 +278,20 @@
   "name": "SWEAT DRAGON BALL Z VEGETA ADIDAS",
   "imageUrl":[
     "/assets/images/sweat-dbz.webp",
-    "/assets/images/sweat-dbz.webp",
+    "/assets/images/sweat-capuche-sangoku-logo.webp",
     "/assets/images/sweat-dbz.webp"
   ],
-  "category": [
+  "categories": [
     {
       "id": "3",
-      "name": "sweat",
-      "slug": "sweat"
+      "name": "sweats",
+      "slug": "sweats"
     },
     {
-      "id": "2",
-      "name": "homme",
-      "slug": "homme"
+      "id": "12",
+      "name": "hommes",
+      "path": "/hommes",
+      "slug": "hommes"
     }
   ],
   "color": ["black", "white", "blue", "gray"],
@@ -289,19 +305,20 @@
   "name": "SWEAT DRAGON BALL Z NIKE JUST DO IT",
   "imageUrl": [
     "/assets/images/sweat-dbz2.webp",
-    "/assets/images/sweat-dbz2.webp",
-    "/assets/images/sweat-dbz2.webp"
+    "/assets/images/sweat-dragon-ball-z-orange.webp",
+    "/assets/images/sweat-capuche-sangoku-logo.webp"
   ],
-  "category": [
+  "categories": [
     {
       "id": "3",
-      "name": "sweat",
-      "slug": "sweat"
+      "name": "sweats",
+      "slug": "sweats"
     },
     {
-      "id": "2",
-      "name": "homme",
-      "slug": "homme"
+      "id": "12",
+      "name": "hommes",
+      "path": "/hommes",
+      "slug": "hommes"
     }
   ],
   "color": ["black", "white", "blue", "gray"],
@@ -315,19 +332,20 @@
   "name": "SWEAT DRAGON BALL Z GIKU BATON MAGIQUE",
   "imageUrl": [
     "/assets/images/sweat-dragon-ball-z-orange.webp",
-    "/assets/images/sweat-dragon-ball-z-orange.webp",
-    "/assets/images/sweat-dragon-ball-z-orange.webp"
+    "/assets/images/sweat-dbz2.webp",
+    "/assets/images/sweat-capuche-sangoku-logo.webp"
   ],
-  "category": [
+  "categories": [
     {
       "id": "3",
-      "name": "sweat",
-      "slug": "sweat"
+      "name": "sweats",
+      "slug": "sweats"
     },
     {
-      "id": "4",
-      "name": "femme",
-      "slug": "femme"
+      "id": "14",
+      "name": "femmes",
+      "path": "/femmes",
+      "slug": "femmes"
     }
   ],
   "color": ["black", "white", "blue", "gray"],
@@ -342,18 +360,19 @@
   "imageUrl": [
     "/assets/images/sweat-dsz3.webp",
     "/assets/images/sweat-goku-chichi.webp",
-    "/assets/images/Sweat_jaune_dbz.webp"
+    "/assets/images/sweat-jaune-dbz.webp"
   ],
-  "category": [
+  "categories": [
     {
       "id": "3",
-      "name": "sweat",
-      "slug": "sweat"
+      "name": "sweats",
+      "slug": "sweats"
     },
     {
-      "id": "4",
-      "name": "femme",
-      "slug": "femme"
+      "id": "14",
+      "name": "femmes",
+      "path": "/femmes",
+      "slug": "femmes"
     }
   ],
   "color": ["black", "white", "blue", "gray"],
@@ -367,19 +386,20 @@
   "name": "SWEAT DRAGON BALL GOKU & CHICHI",
   "imageUrl": [
     "/assets/images/sweat-goku-chichi.webp",
-    "/assets/images/Sweat_jaune_dbz.webp",
+    "/assets/images/sweat-jaune-dbz.webp",
     "/assets/images/sweat-dsz3.webp"
   ],
-  "category": [
+  "categories": [
     {
       "id": "3",
-      "name": "sweat",
-      "slug": "sweat"
+      "name": "sweats",
+      "slug": "sweats"
     },
     {
-      "id": "4",
-      "name": "femme",
-      "slug": "femme"
+      "id": "14",
+      "name": "femmes",
+      "path": "/femmes",
+      "slug": "femmes"
     }
   ],
   "color": ["black", "white", "blue", "gray"],
@@ -392,20 +412,21 @@
 "id": "16",
 "name": "SWEAT DRAGON BALL Z GOKU BLACK APPARITION",
 "imageUrl":[
-  "/assets/images/Sweat_jaune_dbz.webp",
+  "/assets/images/sweat-jaune-dbz.webp",
   "/assets/images/sweat-goku-chichi.webp",
   "/assets/images/sweat-dsz3.webp"
 ],
-"category": [
+"categories": [
   {
     "id": "3",
-    "name": "sweat",
-    "slug": "sweat"
+    "name": "sweats",
+    "slug": "sweats"
   },
   {
-    "id": "4",
-    "name": "femme",
-    "slug": "femme"
+    "id": "14",
+    "name": "femmes",
+    "path": "/femmes",
+    "slug": "femmes"
   }
 ],
 "color": ["black", "white", "blue", "gray"],
@@ -422,16 +443,17 @@
   "/assets/images/casquette-NY2.webp",
   "/assets/images/casquette-NY3.webp"
 ],
-"category": [
+"categories": [
   {
     "id": "5",
     "name": "accessoires",
     "slug": "accessoires"
   },
   {
-    "id": "2",
-    "name": "homme",
-    "slug": "homme"
+    "id": "12",
+    "name": "hommes",
+    "path": "/hommes",
+    "slug": "hommes"
   }
 ],
 "color": ["black", "white", "blue", "gray"],
@@ -448,16 +470,17 @@
   "/assets/images/gants-nike2.webp",
   "/assets/images/gants-nike3.webp"
 ],
-"category": [
+"categories": [
   {
     "id": "5",
     "name": "accessoires",
     "slug": "accessoires"
   },
   {
-    "id": "4",
-    "name": "femme",
-    "slug": "femme"
+    "id": "14",
+    "name": "femmes",
+    "path": "/femmes",
+    "slug": "femmes"
   }
 ],
 "color": ["black", "white", "blue", "gray"],
@@ -467,3 +490,4 @@
 "description": "C'est l'histoire d'un papier qui tombe à l'eau. Il crie \"Au secours ! J’ai pas pied !\""
 }
 ]
+}
