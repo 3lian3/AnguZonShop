@@ -10,6 +10,7 @@ import { ProductManufacturingComponent } from './components/product-tabs/product
 import { ProductCompositionComponent } from './components/product-tabs/product-composition/product-composition.component';
 import { ProductsCategoryComponent } from './components/products-category/products-category.component';
 import { HomeComponent } from './components/home/home.component';
+import { CartComponent } from './components/cart/cart.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -41,6 +42,7 @@ export const routes: Routes = [
   { path: 'category/:slug', component: ProductsCategoryComponent, pathMatch: 'full' },
   { path: 'signin', component: SigninComponent, pathMatch: 'full' },
   { path: 'signup', component: SignupComponent, pathMatch: 'full' },
+  { path: 'cart', component: CartComponent, pathMatch: 'full' },
   { path: '**', redirectTo: '' },
 ];
 

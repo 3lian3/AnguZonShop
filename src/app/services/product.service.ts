@@ -32,12 +32,12 @@ export class ProductService {
   }
 
   deleteProduct(product: Product): void {
-    this.product = this.product.filter(p => p.id !== product.id);
+    this.product = this.product.filter(p => p.slug !== product.slug);
   }
 
   updateProduct(product: Product): void {
     this.product = this.product.map(p => {
-      if (p.id === product.id) {
+      if (p.slug === product.slug) {
         p = product;
       }
       return p;

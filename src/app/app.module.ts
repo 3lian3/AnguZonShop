@@ -25,6 +25,7 @@ import { ProductDescriptionComponent } from './components/product-tabs/product-d
 import { ProductsCategoryComponent } from './components/products-category/products-category.component';
 import { PageTitleComponent } from './components/page-title/page-title.component';
 import { HomeComponent } from './components/home/home.component';
+import { CartComponent } from './components/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { HomeComponent } from './components/home/home.component';
     ProductsCategoryComponent,
     PageTitleComponent,
     HomeComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,
