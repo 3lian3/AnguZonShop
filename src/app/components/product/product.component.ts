@@ -4,6 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Product } from 'src/app/models/product';
 import { ProductService } from 'src/app/services/product.service';
 import { ResultRequest } from 'src/app/models/result-request';
+import { CartService } from 'src/app/services/cart.service';
 
 @Component({
   selector: 'app-product',
@@ -11,6 +12,7 @@ import { ResultRequest } from 'src/app/models/result-request';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnDestroy{
+
 
   slug: string | undefined;
   currentImage: string | undefined;
@@ -21,7 +23,8 @@ export class ProductComponent implements OnDestroy{
 
   constructor(
     private route: ActivatedRoute,
-    private productService: ProductService
+    private productService: ProductService,
+    private cartService: CartService
 
   ) { }
 
@@ -44,11 +47,17 @@ export class ProductComponent implements OnDestroy{
       });
   }
 
-  ngOnDestroy(): void {
-    this.productSub?.unsubscribe();
-  }
-
   handleChangeImage(url: string): void {
     this.currentImage = url;
+  }
+
+  addToCart(event: any) {
+    event.preventDefault();
+    if(this.product)
+    this.cartService.addProduct(this.product);
+  }
+  
+  ngOnDestroy(): void {
+    this.productSub?.unsubscribe();
   }
 }

@@ -6,6 +6,8 @@ import { Category } from 'src/app/models/category';
 import { Item } from 'src/app/models/item';
 import { ResultRequest } from 'src/app/models/result-request';
 import { Product } from 'src/app/models/product';
+import { CartService } from 'src/app/services/cart.service';
+import { Cart } from 'src/app/models/cart';
 
 @Component({
   selector: 'app-header',
@@ -20,9 +22,13 @@ export class HeaderComponent implements OnDestroy{
   categoriesSub: Subscription | undefined;
   productSub: Subscription | undefined;
   products: Product[] | undefined;
+  cart: Cart | undefined;
 
 
-  constructor(private CategoriesService: CategoriesService) { }
+  constructor(
+    private CategoriesService: CategoriesService,
+    private cartService: CartService
+  ) { }
 
   handleClick(event: any, category: Category) {
     event.preventDefault();
@@ -30,12 +36,17 @@ export class HeaderComponent implements OnDestroy{
   }
 
   ngOnInit() {
+    this.cartService.cart$?.subscribe({
+      next: (cart: Cart) => {
+        this.cart = cart;
+      }
+  })
 
   }
 
   ngOnDestroy(): void {
     if (this.categoriesSub) {
-  
+
     }
   }
 }

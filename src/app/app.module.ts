@@ -50,6 +50,7 @@ import { CartComponent } from './components/cart/cart.component';
     HomeComponent,
     CartComponent,
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -57,7 +58,7 @@ import { CartComponent } from './components/cart/cart.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule.forRoot(routes),
+    // RouterModule.forRoot(routes),
   ],
   providers: [],
   bootstrap: [AppComponent],

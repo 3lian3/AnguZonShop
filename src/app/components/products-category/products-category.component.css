@@ -1,6 +1,11 @@
 .title-category {
-  margin-top: 150px;
+  margin-top: 80px;
   font-size: 30px;
+  position: sticky;
+  top: 90px;
+  z-index: 5;
+  height: 100px;
+  border: 80px;
 }
 
 a {
@@ -15,6 +20,9 @@ cursor: pointer;
 
 hr {
 width: 178px;
+position: sticky;
+top: 180px;
+
 }
 
 .products-list {
@@ -29,3 +37,12 @@ width: 178px;
   height: 80px;
 
 }
+ ul.nav {
+  position: sticky;
+  top: 200px;
+ }
+
+ .sticky-category {
+  position: sticky;
+  top: 120px;
+ }

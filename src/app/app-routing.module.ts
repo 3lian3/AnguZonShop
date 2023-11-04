@@ -14,7 +14,7 @@ import { CartComponent } from './components/cart/cart.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
-  { path: 'product-list', component: ProductListComponent, pathMatch: 'full' },
+  { path: 'product-list', component: MainComponent, pathMatch: 'full' },
   {
     path: 'product/:slug',
     component: ProductComponent,

@@ -11,7 +11,7 @@
 			Désolé aucun articles ne correspond à votre recherche!!
 		</div>
 	</div>
-	<app-modal-product *ngIf="displayModal" [product]="modalProduct" (close)="handleCloseModal()"></app-modal-product>
+	<app-modal-product *ngIf="displayModal && modalProduct" [product]="modalProduct" (close)="handleCloseModal()"></app-modal-product>
 </div>
 
 

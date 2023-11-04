@@ -1,4 +1,4 @@
-import { Component, OnDestroy } from '@angular/core';
+import { Component, OnDestroy, Input } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Category } from 'src/app/models/category';
 import { Product } from 'src/app/models/product';
@@ -20,6 +20,9 @@ export class ProductsCategoryComponent implements OnDestroy {
   productSub: Subscription | undefined;
   products: Product[] = [];
   currentCategory: Category | undefined;
+  isLoading: boolean = true;
+  displayModal: boolean = false;
+  modalProduct: Product | undefined;
 
   constructor(
     private categoriesService: CategoriesService,
@@ -43,15 +46,14 @@ export class ProductsCategoryComponent implements OnDestroy {
     if (event) {
       event.preventDefault();
     }
-    console.log(category);
-
+    this.isLoading = true
     this.productSub = this.productService.getProducts()
       .subscribe({
         next: (resultData: ResultRequest<Product>) => {
           console.log('tous les produits:', resultData);
           if (resultData.isSuccess) {
           this.resultData = resultData;
-          let products = resultData.results;
+            let products = resultData.results;
           products = products.filter((product: Product) => {
             for (let i = 0; i < product.categories.length; i++) {
               if (product.categories[i].slug === category.slug) {
@@ -61,11 +63,26 @@ export class ProductsCategoryComponent implements OnDestroy {
             return false;
           });
           this.filteredProducts = products;
-          console.log(products);
+          this.isLoading = false;
+
 
         }
       },
     });
+  }
+
+
+  handleDisplayModalProduct(product: Product) {
+    if(product) {
+      console.log(product);
+      this.displayModal = true;
+      this.modalProduct = product;
+    }
+  }
+
+  handleCloseModal() {
+    this.displayModal = false;
+    this.modalProduct = undefined;
   }
 
   ngOnDestroy(): void {

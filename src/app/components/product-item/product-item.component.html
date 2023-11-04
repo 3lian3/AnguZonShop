@@ -1,15 +1,32 @@
 <div class="card mb-2">
-    <a class="btn" class="position-absolute top-0 end-0" (click)="handleClickProduct(product)">Aperçu</a>
-    <div [routerLink]="['/product', product?.slug]">
-      <img [src]="product ? product.imageUrl[0] : ''" class="card-img-top" [alt]="product?.name">
-      <div class="card-body">
-        <h6 class="card-title"> <strong> {{ product?.name?.substring(0,35) }}
-          {{ product && product.name[36] ? "..." : null}}</strong></h6>
-        <p>Categorie : {{product ? product.categories[0] : null}}
-        </p>
-        <h4 class="text-end">{{product?.price | currency :'EUR':'symbol':'1.2-2'}}</h4>
+	<a class="btn" class="position-absolute top-0 end-0" (click)="handleClickProduct(product)">Aperçu</a>
+	<div [routerLink]="['/product', product?.slug]">
+		<img [src]="product ? product.imageUrl[0] : ''" class="card-img-top" [alt]="product?.name">
+		<div class="card-body">
+			<h6 class="card-title">
+				<strong>
+					{{ product?.name?.substring(0,35) }}
+					{{ product && product.name[36] ? "..." : null}}</strong>
+			</h6>
+			<p>Categorie :
+				{{product ? product.categories[0] : null}}
+			</p>
+			<div class="row d-flex align-content-center">
+        <div class="col-4">
+			<h4 class="text-end">{{product?.price | currency :'EUR':'symbol':'1.2-2'}}</h4>
+        </div>
+      <div class="col-8" >
+				<button class="btn btn-info justify-content-center" (click)="addToCart($event)">ajouter au panier<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-bag mx-2" viewbox="0 0 16 16">
+						<path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+					</svg>
+				</button>
+			</div>
       </div>
-    </div>
+		</div>
+	</div>
+
 </div>
 
 
+
+<!--(click)="addToCart($event)"-->

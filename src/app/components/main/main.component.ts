@@ -24,7 +24,6 @@ export class MainComponent implements OnDestroy{
     this.productsSub = this.productService.getProducts()
       .subscribe({
         next: (resultData: ResultRequest<Product>) => {
-          console.log('service produits =>', resultData);
 
           if (resultData.isSuccess) {
             this.products = resultData.results
@@ -42,8 +41,6 @@ export class MainComponent implements OnDestroy{
     }
 
   ngOnDestroy(): void {
-      if (this.productsSub) {
-        this.productsSub.unsubscribe();
-      }
+     this.productsSub?.unsubscribe();
     }
 }

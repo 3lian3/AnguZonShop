@@ -9,3 +9,26 @@ img.logo {
 font-size: 20px;
 font-weight: 600;
  }
+
+ .cart_count {
+  background-color: red;
+  color: white;
+  height: 25px;
+  width: 25px;
+  padding: 2px;
+  font-size: 15px;
+  margin-left: 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  position: absolute;
+}
+
+.iconCart {
+  font-size: 30px;
+  color: black;
+  margin-right: 20px;
+  position: relative;
+  height: 50px;
+  width: 50px;
+}
