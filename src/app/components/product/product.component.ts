@@ -15,6 +15,7 @@ export class ProductComponent implements OnDestroy{
 
 
   slug: string | undefined;
+  quantity: number = 1;
   currentImage: string | undefined;
   product: Product | undefined;
   resultData: ResultRequest<Product> | undefined;
@@ -24,7 +25,7 @@ export class ProductComponent implements OnDestroy{
   constructor(
     private route: ActivatedRoute,
     private productService: ProductService,
-    private cartService: CartService
+    private cartService: CartService,
 
   ) { }
 
@@ -53,10 +54,33 @@ export class ProductComponent implements OnDestroy{
 
   addToCart(event: any) {
     event.preventDefault();
+    console.log(this.product);
+
     if(this.product)
-    this.cartService.addProduct(this.product);
+    this.cartService.addProduct(this.product, this.quantity);
   }
-  
+
+  setQuantity(event: any, quantity: number = 1) {
+    if (!event) {
+      this.quantity += quantity;
+      if (this.quantity <= 0) {
+        this.quantity = 1;
+      }
+    } else {
+      event.preventDefault();
+      const { value } = event.target;
+      const newValue = parseInt(value);
+      if (!isNaN(newValue)) {
+        this.quantity = newValue;
+      } else {
+        this.quantity = 1;
+      }
+    }
+
+console.log(this.quantity);
+
+  }
+
   ngOnDestroy(): void {
     this.productSub?.unsubscribe();
   }

@@ -1,0 +1,32 @@
+.main_content{
+  margin-top: 200px;
+}
+
+.closeIcon {
+  font-weight: 500;
+}
+
+.containerEmptyCart{
+height: 75vh;
+width: 100%;
+display: flex;
+justify-content: center;
+align-content: center;
+}
+
+.emptyCartTxt
+{
+  font-size: 30px;
+  font-weight: 800;
+  width: 100%;
+}
+
+.CartTitle
+{
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.row.align-content-center.justify-content-center{
+  width: 100%;
+}

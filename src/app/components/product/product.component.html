@@ -1,63 +1,60 @@
-<app-loader  *ngIf="isLoading"></app-loader>
+<app-loader *ngIf="isLoading"></app-loader>
 <div *ngIf="!isLoading" class="container">
-  <div class="row">
-    <div class="col flex-column text-end">
-      <img *ngFor="let url of product?.imageUrl" [src]="url" class="current mt-3" [alt]="product?.name" width="100px" height="100px" (click)="handleChangeImage(url)" [ngClass]="{current: currentImage == url }">
-    </div>
-    <div class="col-10">
-      <div class="row">
-        <div class="col-6 d-flex">
-          <img [src]="currentImage" class="my-3 " alt="{{product?.name}}" width="400px" height="400px">
-        </div>
-        <div class="col-6 my-3">
-        <div class="my-3 test-start">
-        <app-breadcrumb [breadcrumbs]="[{ label: 'Home', url: '/home' }, { label: 'Liste d\'articles', url: '/list-product' }, { label: '/Détail article', url: 'list-product/product/:slug' }]"></app-breadcrumb>
-        </div>
-          <h4 >{{ product?.name }}</h4>
-          <div>
-            <h5>Categorie :
-							t-shirt
-								/
-							femme
-						</h5>
-          </div>
-          <div class="my-3 ">
-            <h4>{{ (product?.price || 0 ) | currency :'EUR':'symbol':'1.2-2' }}</h4>
-          </div>
-			<div class="row" *ngIf="product && product.size">
-				<div class="col-4 my-2">
-					<label for="inputState" class="form-label">Taille :</label>
-				</div>
-				<div class="col-6 my-2">
-					<select id="inputState" class="form-select">
-						<option selected>Choisir la taille</option>
-						<option *ngFor="let size of product.size">{{size}}</option>
-					</select>
-				</div>
+	<div class="row">
+		<div class="col flex-column text-end">
+			<img *ngFor="let url of product?.imageUrl" [src]="url" class="current mt-3" [alt]="product?.name" width="100px" height="100px" (click)="handleChangeImage(url)" [ngClass]="{current: currentImage == url }">
+		</div>
+		<div class="col-10">
 			<div class="row">
-				<div class="col-4 my-3">
-					<select class="form-select" aria-label="Default select example">
-						<option selected>Qtes</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="3">4</option>
-						<option value="3">5</option>
-					</select>
+				<div class="col-6 d-flex">
+					<img [src]="currentImage" class="my-3 " alt="{{product?.name}}" width="400px" height="400px">
 				</div>
-				<div class="col-8 my-3">
-					<a href="#" (click)="addToCart($event)" class="btn btn-primary justify-content-center">ajouter au panier<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-bag mx-2" viewBox="0 0 16 16">
-  <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
-</svg>
-					</a>
+				<div class="col-6 my-3">
+					<div class="my-3 test-start">
+						<app-breadcrumb [breadcrumbs]="[{ label: 'Home', url: '/home' }, { label: 'Liste d\'articles', url: '/list-product' }, { label: '/Détail article', url: 'list-product/product/:slug' }]"></app-breadcrumb>
+					</div>
+					<h4>{{ product?.name }}</h4>
+					<div>
+						<h5>Categorie : t-shirt / femme</h5>
+					</div>
+					<div class="my-3 ">
+						<h4>{{ (product?.price || 0 ) | currency :'EUR':'symbol':'1.2-2' }}</h4>
+					</div>
+					<div class="row" *ngIf="product && product.size">
+						<div class="col-4 my-2">
+							<label for="inputState" class="form-label">Taille :</label>
+						</div>
+						<div class="col-6 my-2">
+							<select id="inputState" class="form-select">
+								<option selected>Choisir la taille</option>
+								<option *ngFor="let size of product.size">{{size}}</option>
+							</select>
+						</div>
+						<div class="row">
+							<div class="cart_extra">
+								<div class="cart-product-quantity">
+									<div class="quantity">
+										<input (click)="setQuantity(null, -1)" type="button" value="-" class="minus">
+										<input (keyup)="setQuantity($event)" type="text" name="quantity" [(ngModel)]="quantity" title="Qty" size="4" class="qty">
+										<input (click)="setQuantity(null, 1)" type="button" value="+" class="plus">
+									</div>
+								</div>
+								<div class="col-8 my-3">
+									<button class="btn btn-primary justify-content-center" (click)="addToCart($event)">ajouter au panier<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-bag mx-2" viewbox="0 0 16 16">
+									<path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/></svg>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-			
 			</div>
-      		</div>
 		</div>
 	</div>
 </div>
 <app-product-details *ngIf="!isLoading" [product]="product"></app-product-details>
+
+
 
 
 

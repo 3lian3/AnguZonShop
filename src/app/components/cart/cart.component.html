@@ -1,6 +1,7 @@
 <div  class="main_content">
+<h1 class="CartTitle d-flex justify-content-center mb-">Mon Panier</h1>
     <div  class="section">
-        <div  class="container">
+        <div  class="container" *ngIf="cart?.articles?.length">
             <div  class="row">
                 <div  class="col-12">
                     <div  class="table-responsive shop_cart_table">
@@ -9,124 +10,37 @@
                                 <tr >
                                     <th  class="product-thumbnail">&nbsp;</th>
                                     <th  class="product-name">Product</th>
-                                    <th  class="product-price">Price</th>
-                                    <th  class="product-quantity">Quantity</th>
+                                    <th  class="product-price">Prix</th>
+                                    <th  class="product-quantity">Quantité</th>
                                     <th  class="product-subtotal">Total</th>
                                     <th  class="product-remove">Remove</th>
                                 </tr>
                             </thead>
                             <tbody >
-                                <tr >
-                                    <td  class="product-thumbnail"><a
-                                            ><img  width="50"
-                                                alt="product1"
-                                                src="../../../assets/images/t-shirt-jj3.webp"></a>
+                                <tr *ngFor="let article of cart?.articles">
+                                    <td  class="product-thumbnail">
+                                    <a><img  width="50" [alt]="article?.product?.name" [src]="article?.product?.imageUrl!"></a>
                                     </td>
-                                    <td  data-title="Product" class="product-name"><a
-                                            >t-shirt jujutsu</a></td>
-                                    <td  data-title="Price" class="product-price">19.90</td>
+                                    <td  data-title="Product" class="product-name">
+                                    <a>{{ article?.product?.name}}</a>
+                                    </td>
+                                    <td  data-title="Price" class="product-price">{{ article?.product?.price | currency :'EUR':'symbol':'1.2-2'}}</td>
                                     <td  data-title="Quantity" class="product-quantity">
-                                        <div  class="quantity"><input
-                                                 type="button" value="-"
-                                                class="minus"><input  type="text"
-                                                name="quantity" title="Qty" size="4" class="qty"><input
-                                                 type="button" value="+" class="plus"></div>
+                                        <div  class="quantity">
+                                        <input (click)="handleSetQuantity($event, article?.product, -1)" type="button" value="-" class="minus">
+                                        <input (keyup)="handleSetQuantity($event, article?.product)" type="text" [value]="article?.quantity" name="quantity" title="Qty" size="4" class="qty">
+                                        <input (click)="handleSetQuantity($event, article?.product, 1)" type="button" value="+" class="plus">
+                                        </div>
                                     </td>
-                                    <td  data-title="Total" class="product-subtotal">
-                                        167,37&nbsp;€ </td>
-                                    <td  data-title="Remove" class="product-remove"><a
-                                             href="#"><i
-                                                class="ti-close"></i></a></td>
+                                    <td  data-title="Total" class="product-subtotal">{{ article?.total | currency :'EUR':'symbol':'1.2-2'}}</td>
+                                    <td  data-title="Remove" class="product-remove">
+                                    <a href="#" (click)="removeProduct($event, article)" class="closeIcon d-flex justify-content-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-x-lg" viewBox="0 0 16 16">
+  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+</svg>
+                                    </a>
+                                    </td>
                                 </tr>
-                                <tr >
-                                    <td  class="product-thumbnail"><a
-                                            ><img  width="50"
-                                                alt="product1"
-                                                src="../../../assets/images/Sweat_jaune_dbz.webp"></a>
-                                    </td>
-                                    <td  data-title="Product" class="product-name"><a
-                                            >sweat dragon ball Z</a></td>
-                                    <td  data-title="Price" class="product-price">69.90</td>
-                                    <td  data-title="Quantity" class="product-quantity">
-                                        <div  class="quantity"><input
-                                                 type="button" value="-"
-                                                class="minus"><input  type="text"
-                                                name="quantity" title="Qty" size="4" class="qty"><input
-                                                 type="button" value="+" class="plus"></div>
-                                    </td>
-                                    <td  data-title="Total" class="product-subtotal">
-                                        44,54&nbsp;€ </td>
-                                    <td  data-title="Remove" class="product-remove"><a
-                                             href="#"><i
-                                                class="ti-close"></i></a></td>
-                                </tr>
-                                <tr >
-                                    <td  class="product-thumbnail"><a
-                                            ><img  width="50"
-                                                alt="product1"
-                                                src="../../../assets/images/t-shirt-my-hero2.webp"></a>
-                                    </td>
-                                    <td  data-title="Product" class="product-name"><a
-                                            >t-shirt my hero academia</a></td>
-                                    <td  data-title="Price" class="product-price">19.90</td>
-                                    <td  data-title="Quantity" class="product-quantity">
-                                        <div  class="quantity"><input
-                                                 type="button" value="-"
-                                                class="minus"><input  type="text"
-                                                name="quantity" title="Qty" size="4" class="qty"><input
-                                                 type="button" value="+" class="plus"></div>
-                                    </td>
-                                    <td  data-title="Total" class="product-subtotal">
-                                        51,51&nbsp;€ </td>
-                                    <td  data-title="Remove" class="product-remove"><a
-                                             href="#"><i
-                                                class="ti-close"></i></a></td>
-                                </tr>
-                                <tr >
-                                    <td  class="product-thumbnail"><a
-                                            ><img  width="50"
-                                                alt="product1"
-                                                src="../../../assets/images/t-shirt-jjsu.webp"></a>
-                                    </td>
-                                    <td  data-title="Product" class="product-name"><a
-                                            >t-shirt jujutsu</a></td>
-                                    <td  data-title="Price" class="product-price">19.90</td>
-                                    <td  data-title="Quantity" class="product-quantity">
-                                        <div  class="quantity"><input
-                                                 type="button" value="-"
-                                                class="minus"><input  type="text"
-                                                name="quantity" title="Qty" size="4" class="qty"><input
-                                                 type="button" value="+" class="plus"></div>
-                                    </td>
-                                    <td  data-title="Total" class="product-subtotal">
-                                        56,48&nbsp;€ </td>
-                                    <td  data-title="Remove" class="product-remove"><a
-                                             href="#"><i
-                                                class="ti-close"></i></a></td>
-                                </tr>
-                                <tr >
-                                    <td  class="product-thumbnail"><a
-                                            ><img  width="50"
-                                                alt="product1"
-                                                src="../../../assets/images/sweat-dbz2.webp"></a>
-                                    </td>
-                                    <td  data-title="Product" class="product-name"><a
-                                            >sweat dragon ball Z</a></td>
-                                    <td  data-title="Price" class="product-price">69.90</td>
-                                    <td  data-title="Quantity" class="product-quantity">
-                                        <div  class="quantity"><input
-                                                 type="button" value="-"
-                                                class="minus"><input  type="text"
-                                                name="quantity" title="Qty" size="4" class="qty"><input
-                                                 type="button" value="+" class="plus"></div>
-                                    </td>
-                                    <td  data-title="Total" class="product-subtotal">
-                                        112,14&nbsp;€ </td>
-                                    <td  data-title="Remove" class="product-remove"><a
-                                             href="#"><i
-                                                class="ti-close"></i></a></td>
-                                </tr>
-
                             </tbody>
                         </table>
                     </div>
@@ -140,38 +54,48 @@
                     <div  class="medium_divider"></div>
                 </div>
             </div>
-            <div  class="row">
+            <div  class="row" *ngIf="cart?.articles?.length">
                 <div  class="col-md-6"></div>
                 <div  class="col-md-6">
                     <div  class="border p-3 p-md-4">
                         <div  class="heading_s1 mb-3">
-                            <h6 >Cart Totals</h6>
+                            <h6 >Totals Panier</h6>
                         </div>
                         <div  class="table-responsive">
                             <table  class="table">
                                 <tbody >
                                     <tr >
-                                        <td  class="cart_total_label">Cart Subtotal</td>
-                                        <td  class="cart_total_amount">606,99&nbsp;€</td>
+                                        <td  class="cart_total_label">Sous-Total</td>
+                                        <td  class="cart_total_amount">
+                                        {{ cart?.total | currency :'EUR':'symbol':'1.2-2' }}</td>
                                     </tr>
                                     <tr >
-                                        <td  class="cart_total_label">Shipping</td>
-                                        <td  class="cart_total_amount">Free Shipping</td>
+                                        <td  class="cart_total_label">Frais de Port</td>
+                                        <td  class="cart_total_amount">Gratuit</td>
                                     </tr>
                                     <tr >
                                         <td  class="cart_total_label">Total</td>
-                                        <td  class="cart_total_amount"><strong
-                                                >606,99&nbsp;€</strong></td>
+                                        <td  class="cart_total_amount">
+                                          <strong>{{ cart?.total | currency :'EUR':'symbol':'1.2-2' }}</strong>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
-                        </div><a  routerlink="/checkout" class="btn btn-fill-out"
-                            ng-reflect-router-link="/checkout" href="/checkout">Proceed To CheckOut</a>
+                        </div><a  routerlink="/checkout" class="btn btn-fill-out" ng-reflect-router-link="/checkout" href="/checkout">Réglement</a>
                     </div>
                 </div>
             </div>
         </div>
-
+        <div class="containerEmptyCart" *ngIf="!cart?.articles?.length">
+          <div class="row align-content-center justify-content-center">
+            <div class="col-lg-6 col-md-10 col-lg-first">
+              <div class="text-center justify-content-center">
+                <p class="emptyCartTxt">Votre panier est vide</p>
+                <a routerLink="/" class="btn btn-info">Retour à l'accueil</a>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
 </div>
 
