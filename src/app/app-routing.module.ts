@@ -11,6 +11,7 @@ import { ProductCompositionComponent } from './components/product-tabs/product-c
 import { ProductsCategoryComponent } from './components/products-category/products-category.component';
 import { HomeComponent } from './components/home/home.component';
 import { CartComponent } from './components/cart/cart.component';
+import { CheckoutComponent } from './components/checkout/checkout.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -43,6 +44,7 @@ export const routes: Routes = [
   { path: 'signin', component: SigninComponent, pathMatch: 'full' },
   { path: 'signup', component: SignupComponent, pathMatch: 'full' },
   { path: 'cart', component: CartComponent, pathMatch: 'full' },
+  { path: 'checkout', component: CheckoutComponent, pathMatch: 'full' },
   { path: '**', redirectTo: '' },
 ];
 

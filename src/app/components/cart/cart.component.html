@@ -28,7 +28,7 @@
                                     <td  data-title="Quantity" class="product-quantity">
                                         <div  class="quantity">
                                         <input (click)="handleSetQuantity($event, article?.product, -1)" type="button" value="-" class="minus">
-                                        <input (keyup)="handleSetQuantity($event, article?.product)" type="text" [value]="article?.quantity" name="quantity" title="Qty" size="4" class="qty">
+                                        <input (keyup)="handleSetQuantity($event, article?.product)" type="text" [value]="article?.quantity" name="quantity" title="Qty" size="4" class="text-center">
                                         <input (click)="handleSetQuantity($event, article?.product, 1)" type="button" value="+" class="plus">
                                         </div>
                                     </td>
@@ -66,8 +66,7 @@
                                 <tbody >
                                     <tr >
                                         <td  class="cart_total_label">Sous-Total</td>
-                                        <td  class="cart_total_amount">
-                                        {{ cart?.total | currency :'EUR':'symbol':'1.2-2' }}</td>
+                                        <td  class="cart_total_amount">{{ cart?.total | currency :'EUR':'symbol':'1.2-2' }}</td>
                                     </tr>
                                     <tr >
                                         <td  class="cart_total_label">Frais de Port</td>
@@ -75,13 +74,11 @@
                                     </tr>
                                     <tr >
                                         <td  class="cart_total_label">Total</td>
-                                        <td  class="cart_total_amount">
-                                          <strong>{{ cart?.total | currency :'EUR':'symbol':'1.2-2' }}</strong>
-                                        </td>
+                                        <td  class="cart_total_amount"><strong>{{ cart?.total | currency :'EUR':'symbol':'1.2-2' }}</strong></td>
                                     </tr>
                                 </tbody>
                             </table>
-                        </div><a  routerlink="/checkout" class="btn btn-fill-out" ng-reflect-router-link="/checkout" href="/checkout">Réglement</a>
+                        </div><a  routerlink="/checkout" class="btn btn-outline-success" ng-reflect-router-link="/checkout" href="/checkout">Réglement</a>
                     </div>
                 </div>
             </div>
